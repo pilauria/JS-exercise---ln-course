@@ -2,14 +2,14 @@
   THIS IS THE FINAL SOLUTION PRESENTED IN THE VIDEO
 */
 
-// Recursive Solution
-function numPermutations(letters) {
-  if (letters.length === 1) {
-    return 1;
-  }
+// // Recursive Solution
+// function numPermutations(letters) {
+//   if (letters.length === 1) {
+//     return 1;
+//   }
 
-  return letters.length * numPermutations(letters.slice(1));
-}
+//   return letters.length * numPermutations(letters.slice(1));
+// }
 
 // Iterative Solution
 // function numPermutations(letters) {
@@ -19,10 +19,11 @@ function numPermutations(letters) {
 //       total = i;
 //       continue;
 //     }
+//     // console.log((total *= i));
 //     total *= i;
 //   }
 
 //   return total;
 // }
 
-console.log(numPermutations("hello"));
+// console.log(numPermutations('abcd'));
